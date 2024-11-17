@@ -1,0 +1,27 @@
+# pymongo-api
+
+## Как запустить
+
+Запускаем mongodb и приложение
+
+```shell
+docker network rm mongo-sharding-repl_app-network
+
+docker compose up -d
+```
+
+Инициализруем шарды и заполняем mongodb данными 
+
+```shell
+./scripts/mongo-init.sh
+```
+
+## Как проверить
+
+### Если вы запускаете проект на локальной машине
+
+Откройте в браузере http://localhost:8080
+
+## Доступные эндпоинты
+
+Список доступных эндпоинтов, swagger http://<ip виртуальной машины>:8080/docs
